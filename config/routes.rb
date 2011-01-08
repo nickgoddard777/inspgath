@@ -1,7 +1,14 @@
 Inspgath::Application.routes.draw do
-  resources :events
 
-  resources :categories
+	match 'about' 			=> 'pages#about'
+	match 'contact'			=> 'pages#contact'
+	match 'lisavickerage'	=> 'pages#lisavickerage'
+	match 'ellenwray'		=> 'pages#ellenwray'
+	
+
+	resources :pages
+	resources :events
+	resources :categories
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -52,7 +59,7 @@ Inspgath::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => "welcome#index"
+	root :to => "pages#home"
 
   # See how all your routes lay out with "rake routes"
 

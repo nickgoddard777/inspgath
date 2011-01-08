@@ -5,6 +5,7 @@ class CategoriesController < ApplicationController
 
   def show
     @category = Category.find(params[:id])
+    @title = "Inspirational Gatherings | Events: " + @category.name 
   end
 
   def new

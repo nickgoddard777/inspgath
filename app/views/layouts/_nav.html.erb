@@ -1,0 +1,17 @@
+<nav>
+<ul id="nav">
+	<li><%= link_to "Homepage", root_path %></li>
+	<li><%= link_to "About", about_path %></li>
+	<li><%= link_to "Events", events_path %>
+		<ul>
+			<% cache 'all_categories' do %>
+				<% for category in Category.all %>
+					<li><%= link_to h(category.name), category %></li>
+				<% end %>
+			<% end %>
+		</ul>
+	</li>
+	<li><a href="#" title="Blog">Blog</a></li>
+	<li><%= link_to "Contact", contact_path %></li>
+</ul>
+</nav>
