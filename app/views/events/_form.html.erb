@@ -1,0 +1,28 @@
+<%= form_for @event do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <%= f.label :startdate, "Start Date" %><br />
+    <%= f.date_select :startdate %>
+  </p>
+  <p>
+    <%= f.label :enddate, "End Date" %><br />
+    <%= f.date_select :enddate %>
+  </p>
+  <p>
+    <%= f.label :url_link %><br />
+    <%= f.text_field :url_link %>
+  </p>
+  <p>
+    <%= f.label :category_id %><br />
+    <%= f.collection_select(:category_id, Category.all, :id, :name) %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

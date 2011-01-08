@@ -1,0 +1,32 @@
+<% title "Event" %>
+
+<p>
+  <strong>Title:</strong>
+  <%= @event.title %>
+</p>
+<p>
+  <strong>Description:</strong>
+  <%= @event.description %>
+</p>
+<p>
+  <strong>Startdate:</strong>
+  <%= @event.startdate %>
+</p>
+<p>
+  <strong>Enddate:</strong>
+  <%= @event.enddate %>
+</p>
+<p>
+  <strong>Url Link:</strong>
+  <%= @event.url_link %>
+</p>
+<p>
+  <strong>Category:</strong>
+  <%= @event.category_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_event_path(@event) %> |
+  <%= link_to "Destroy", @event, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", events_path %>
+</p>
