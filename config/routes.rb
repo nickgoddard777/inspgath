@@ -1,4 +1,6 @@
 Inspgath::Application.routes.draw do
+  resources :categories
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
