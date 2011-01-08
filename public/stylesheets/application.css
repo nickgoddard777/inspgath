@@ -25,6 +25,9 @@ a {
   padding: 20px 40px;
   border: solid 1px black;
   margin-top: 20px;
+  border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
 }
 
 #flash_notice, #flash_error, #flash_alert {
@@ -73,3 +76,113 @@ a {
 .error_messages ul {
   margin: 0;
 }
+
+header, section, footer,
+aside, nav, article, figure {
+	display: block;
+}
+
+#banner {
+	margin: 0 auto;
+	padding: 2.5em 0 0 0;
+}
+
+/* Banner */
+#banner h1 {font-size: 3.571em; line-height: .6;}
+
+#banner h1 a:link, #banner h1 a:visited {
+	color: #6E3DD9;
+	font-weight: bold;
+	margin: 0 0 .6em .2em;
+	text-decoration: none;
+}
+
+#banner h1 a:hover, #banner h1 a:active {
+	background: none;
+	color: #F257D8;
+	text-shadow: none;
+}
+
+#banner h1 strong {font-size: 0.36em; font-weight: normal;}
+
+/*
+	Extras
+*******************/
+
+#extras {margin: 0 auto 3em auto; overflow: hidden;}
+
+#extras ul {list-style: none; margin: 0;}
+#extras li {border-bottom: 1px solid #FAE9B1;}
+#extras h2 {
+	color: #6E3DD9;
+	font-size: 1.429em;
+	margin-bottom: .25em;
+	padding: 0 3px;
+}
+
+#extras a:link, #extras a:visited {
+	color: #444;
+	display: block;
+	border-bottom: 1px solid #6E3DD9;
+	text-decoration: none;
+	padding: .3em .25em;
+}
+
+
+
+#extras img {
+	float:left;
+	width: 152px;
+	margin-top: 75px;
+}
+
+/* Social */
+	#extras .social {
+		float: right;
+		width: 175px;
+	}
+
+#extras div[class='social'] a {
+	background-repeat: no-repeat;
+	background-position: 3px 6px;
+	padding-left: 25px;
+}
+
+/* Icons */
+.social a[href*='delicious.com'] {background-image: url('../images/icons/delicious.png');}
+.social a[href*='digg.com'] {background-image: url('../images/icons/digg.png');}
+.social a[href*='facebook.com'] {background-image: url('../images/icons/facebook.png');}
+.social a[href*='last.fm'], .social a[href*='lastfm'] {background-image: url('../images/icons/lastfm.png');}
+.social a[href*='/feeds/'] {background-image: url('../images/icons/rss.png');}
+.social a[href*='twitter.com'] {background-image: url('../images/icons/twitter.png');}
+.social a[href*='uk.linkedin.com'] {background-image: url('../images/icons/linkedin.png');}
+
+/*
+	Footer
+*****************/
+
+#contentinfo {padding-bottom: 2em; text-align: right;}
+
+/*
+	About
+*****************/
+#about {
+	font-style: normal;
+	margin-bottom: 2em;
+	overflow: hidden;
+	padding: 20px;
+	text-align: left;
+
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+#about .primary {float: left; width: 165px;}
+#about .primary strong {color: #6E3DD9; display: block; font-size: 1.286em;}
+#about .photo {float: left; margin: 5px ;}
+
+#about .url:link, #about .url:visited {text-decoration: none;}
+
+#about .bio {float: right; width: 300px;}
+

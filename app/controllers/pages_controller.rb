@@ -54,7 +54,7 @@ class PagesController < ApplicationController
   	render 'display'
   end
   
-  def home
+  def contact
   	@title = "Inspirational Gatherings | Contact Us"
   	@page = Page.find_by_page_type('contact')
   	render 'display'
