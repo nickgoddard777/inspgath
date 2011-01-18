@@ -1,12 +1,14 @@
 <% title "User" %>
 
-<p>
-  <strong>Name:</strong>
-  <%= @user.name %>
-</p>
+<h1><%= @user.name %></h1>
+
 <p>
   <strong>Email:</strong>
   <%= @user.email %>
+</p>
+<p>
+  <strong>URL:</strong>
+  <%= link_to user_path(@user), @user %>
 </p>
 
 <p>

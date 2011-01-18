@@ -12,5 +12,6 @@ group :test do
 	gem 'sqlite3-ruby', '1.3.2', :require => 'sqlite3'
 	gem 'rspec', '2.3.0'
 	gem 'webrat', '0.7.1'
+	gem 'factory_girl_rails'
 end
 gem "mocha", :group => :test
