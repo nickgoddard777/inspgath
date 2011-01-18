@@ -1,5 +1,7 @@
 Inspgath::Application.routes.draw do
 
+
+	match '/signup'			=> 'users#new'
 	match 'about' 			=> 'pages#about'
 	match 'contact'			=> 'pages#contact'
 	match 'lisavickerage'	=> 'pages#lisavickerage'
@@ -9,6 +11,7 @@ Inspgath::Application.routes.draw do
 	resources :pages
 	resources :events
 	resources :categories
+	resources :users
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
