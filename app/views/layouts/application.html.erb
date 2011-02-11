@@ -12,7 +12,7 @@
 		<div id="container">
 			<header class="body" id="banner">
 				<%= image_tag("InspirationalGatheringsLogo150.png", :alt => "Inspirational Gatherings") %>
-				<h1><%= link_to "Inspirational Gatherings", '/' %></h1>
+				<%= image_tag("insp logotext.png", :alt => "Inspirational Gatherings") %>
 				<%= render "layouts/nav"%>
 			</header><!-- /#banner -->
 			<section class="body" id="content">
@@ -49,6 +49,11 @@
 					<span class="bio">Inspirational Gatherings are a company that create spaces where you can dream, explore and discover your potential...... It was founded by Ellen Wray and Lisa Vickerage.</span>
 				</address><!-- /#about -->
 				<div id="admin-nav">
+					<% if signed_in? %>
+						<%= link_to "Sign out", signout_path, :method => :destroy %>
+					<% else %>
+						<%= link_to "Sign in", signin_path %>
+					<% end %>
 				</div>
 				<p>2010 <%= link_to "Inspirational Gatherings", '/' %>.</p>
 			</footer><!-- /#contentinfo -->

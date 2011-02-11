@@ -1,17 +1,20 @@
 Inspgath::Application.routes.draw do
-
-
+	
+	match '/signin'			=> 'sessions#new'
+	match '/signout'		=> 'sessions#destroy'
 	match '/signup'			=> 'users#new'
 	match 'about' 			=> 'pages#about'
 	match 'contact'			=> 'pages#contact'
 	match 'lisavickerage'	=> 'pages#lisavickerage'
 	match 'ellenwray'		=> 'pages#ellenwray'
+	match 'admin'			=> 'pages#admin'
 	
 
 	resources :pages
 	resources :events
 	resources :categories
 	resources :users
+	resources :sessions, :only => [:new, :create, :destroy]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

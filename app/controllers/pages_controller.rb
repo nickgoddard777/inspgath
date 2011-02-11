@@ -59,4 +59,8 @@ class PagesController < ApplicationController
   	@page = Page.find_by_page_type('contact')
   	render 'display'
   end
+  
+  def admin
+  	@title = "Inspirational Gatherings | Admin"
+  end
 end

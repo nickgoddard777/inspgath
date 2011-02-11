@@ -1,5 +1,5 @@
 body {
-  background-color: #4B7399;
+  background-color: #0A68B5;
   font-family: Verdana, Helvetica, Arial;
   font-size: 14px;
 }
@@ -91,7 +91,7 @@ aside, nav, article, figure {
 #banner h1 {font-size: 3.571em; line-height: .6;}
 
 #banner h1 a:link, #banner h1 a:visited {
-	color: #6E3DD9;
+	color: #000;
 	font-weight: bold;
 	margin: 0 0 .6em .2em;
 	text-decoration: none;

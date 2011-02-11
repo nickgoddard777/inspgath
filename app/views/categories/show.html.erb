@@ -5,8 +5,22 @@
   <%= @category.description %>
 </p>
 
+<% if signed_in? %>
 <p>
   <%= link_to "Edit", edit_category_path(@category) %> |
   <%= link_to "Destroy", @category, :confirm => 'Are you sure?', :method => :delete %> |
   <%= link_to "View All", categories_path %>
 </p>
+<% end %>
+<div>
+
+	<% unless @category.events.empty? %>
+		<table class="events" summary="Category events">
+			<%= render @events %>
+		</table>
+	<% end %>
+	
+<% if signed_in? %>
+	<p><%= link_to "New Event", new_event_path %></p>
+<% end %>
+</div>

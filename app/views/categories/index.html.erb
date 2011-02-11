@@ -9,11 +9,16 @@
     <tr>
       <td><%= category.name %></td>
       <td><%= category.description %></td>
+<% if signed_in? %>
       <td><%= link_to "Show", category %></td>
       <td><%= link_to "Edit", edit_category_path(category) %></td>
       <td><%= link_to "Destroy", category, :confirm => 'Are you sure?', :method => :delete %></td>
+      <% end %>
     </tr>
   <% end %>
 </table>
 
+
+<% if signed_in? %>
 <p><%= link_to "New Category", new_category_path %></p>
+<% end %>
