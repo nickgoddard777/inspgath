@@ -1,0 +1,18 @@
+<footer id="contentinfo" class="body">
+				<address id="about" class="vcard body">
+					<span class="primary">
+						<strong><%= link_to "Inspirational Gatherings", '/', :class => 'fn url' %></strong>
+						<span class="role"><em>Amazing Events</em></span>
+					</span><!-- /.primary -->
+					<%= image_tag("InspirationalGatheringsLogo150.png", :alt => "Inspirational Gatherings Logo", :class => "photo") %>
+					<span class="bio">Inspirational Gatherings are a company that create spaces where you can dream, explore and discover your potential...... It was founded by Ellen Wray and Lisa Vickerage.</span>
+				</address><!-- /#about -->
+				<div id="admin-nav">
+					<% if signed_in? %>
+						<%= link_to "Sign out", signout_path, :method => :destroy %>
+					<% else %>
+						<%= link_to "Sign in", signin_path %>
+					<% end %>
+				</div>
+				<p>2011 <%= link_to "Inspirational Gatherings", '/' %>.</p>
+			</footer><!-- /#contentinfo -->

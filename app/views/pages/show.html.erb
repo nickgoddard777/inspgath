@@ -10,7 +10,7 @@
 </p>
 <p>
   <strong>Body:</strong>
-  <%= @page.body %>
+  <%= raw(@page.body) %>
 </p>
 
 <% if signed_in? %>

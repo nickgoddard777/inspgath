@@ -1,0 +1,22 @@
+<section id="extras" class="body">
+				<section id="event-list">
+					<h2>upcoming events</h2>
+					<ul>
+						<% for event in Event.next_five %>
+							<li><%= event.title %></li>
+						<% end %>
+					</ul>
+				</section>
+				<%= image_tag("Inspirational Retreat Image.jpg", :alt => "Inspirational Retreat Image") %>
+				<div class="social">
+					<h2>social</h2>
+					<ul>
+						<li><a href="http://delicious.com/enrique_ramirez" rel="me">delicious</a></li>
+						<li><a href="http://www.facebook.com/pages/Inspirational-Gatherings/136767873034010" rel="me">facebook</a></li>
+						<li><a href="http://www.lastfm.es/user/enrique-ramirez" rel="me">last.fm</a></li>
+						<li><a href="http://afestivalorganisers.blogspot.com/feeds/posts/default" rel="alternate">rss</a></li>
+						<li><a href="http://twitter.com/enrique_ramirez" rel="me">twitter</a></li>				
+						<li><a href="http://uk.linkedin.com/in/inspirationalgatherings" rel="me">linkedin</a></li>
+					</ul>
+				</div><!-- /.social -->
+			</section>

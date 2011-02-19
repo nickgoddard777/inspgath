@@ -1,28 +1,21 @@
 <% title "Event" %>
 
+<h2><%= @event.title %></h2>
 <p>
-  <strong>Title:</strong>
-  <%= @event.title %>
+  <strong>Event description:</strong>
+  <%= raw(@event.description) %>
 </p>
 <p>
-  <strong>Description:</strong>
-  <%= @event.description %>
+  <strong>Dates:</strong>
+  <%= @event.startdate.strftime '%d/%m/%Y' %> - <%= @event.enddate.strftime '%d/%m/%Y' %>
 </p>
 <p>
-  <strong>Startdate:</strong>
-  <%= @event.startdate %>
-</p>
-<p>
-  <strong>Enddate:</strong>
-  <%= @event.enddate %>
-</p>
-<p>
-  <strong>Url Link:</strong>
-  <%= @event.url_link %>
+  <strong>Related Sites:</strong>
+  <%= link_to @event.url_link, @event.url_link %>
 </p>
 <p>
   <strong>Category:</strong>
-  <%= @event.category_id %>
+  <%= Category.find(@event.category_id).name %>
 </p>
 
 	

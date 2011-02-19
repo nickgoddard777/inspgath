@@ -18,4 +18,8 @@ class Event < ActiveRecord::Base
 	def end_date_cannot_be_earlier_than_the_start_date
 		errors.add(:end_date, "can't be before the start date") if !enddate.blank? and enddate <= startdate
 	end
+	
+	def self.next_five
+		self.all(:conditions => ['startdate > :end_of_day'], :limit => 5, :order => "startdate ASC")
+	end
 end

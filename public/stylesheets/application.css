@@ -2,6 +2,7 @@ body {
   background-color: #0A68B5;
   font-family: Verdana, Helvetica, Arial;
   font-size: 14px;
+  color: #031F35;
 }
 
 a img {
@@ -9,7 +10,7 @@ a img {
 }
 
 a {
-  color: #0000FF;
+  color: #074C82;
 }
 
 .clear {
@@ -112,9 +113,9 @@ aside, nav, article, figure {
 #extras {margin: 0 auto 3em auto; overflow: hidden;}
 
 #extras ul {list-style: none; margin: 0;}
-#extras li {border-bottom: 1px solid #FAE9B1;}
+#extras li {border-bottom: 1px solid #031F35;}
 #extras h2 {
-	color: #6E3DD9;
+	color: #074C82;
 	font-size: 1.429em;
 	margin-bottom: .25em;
 	padding: 0 3px;
@@ -123,12 +124,15 @@ aside, nav, article, figure {
 #extras a:link, #extras a:visited {
 	color: #444;
 	display: block;
-	border-bottom: 1px solid #6E3DD9;
+	border-bottom: 1px solid #031F35;
 	text-decoration: none;
 	padding: .3em .25em;
 }
 
-
+#extras #event-list {
+	float: left;
+	width: 300px;
+}
 
 #extras img {
 	float:left;
@@ -185,4 +189,6 @@ aside, nav, article, figure {
 #about .url:link, #about .url:visited {text-decoration: none;}
 
 #about .bio {float: right; width: 300px;}
+
+#admin-nav {float:left;}
 

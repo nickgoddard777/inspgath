@@ -2,7 +2,7 @@
 
 <p>
   <strong>Description:</strong>
-  <%= @category.description %>
+  <%= raw(@category.description) %>
 </p>
 
 <% if signed_in? %>
