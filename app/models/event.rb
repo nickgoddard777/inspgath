@@ -20,6 +20,8 @@ class Event < ActiveRecord::Base
 	end
 	
 	def self.next_five
-		self.all(:conditions => ['startdate > :end_of_day'], :limit => 5, :order => "startdate ASC")
+		self.all(:limit => 5, :order => "startdate ASC")
 	end
+	
+	
 end

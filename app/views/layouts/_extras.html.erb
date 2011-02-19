@@ -3,7 +3,7 @@
 					<h2>upcoming events</h2>
 					<ul>
 						<% for event in Event.next_five %>
-							<li><%= event.title %></li>
+							<li><%= link_to event.title, events_path(event.id) %></li>
 						<% end %>
 					</ul>
 				</section>
