@@ -10,7 +10,7 @@
   </tr>
   <% for event in @events %>
     <tr>
-      <td><%= event.title %></td>
+      <td><%= link_to event.title, event %></td>
       <td><%= event.startdate %></td>
       <td><%= event.enddate %></td>
       <td><%= event.url_link %></td>
