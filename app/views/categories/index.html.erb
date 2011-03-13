@@ -3,12 +3,13 @@
 <table>
   <tr>
     <th>Name</th>
-    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
   </tr>
   <% for category in @categories %>
     <tr>
       <td><%= category.name %></td>
-      <td><%= category.description %></td>
 <% if signed_in? %>
       <td><%= link_to "Show", category %></td>
       <td><%= link_to "Edit", edit_category_path(category) %></td>
