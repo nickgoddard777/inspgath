@@ -1,5 +1,7 @@
 Inspgath::Application.routes.draw do
 	
+  resources :contacts
+
 	match '/signin'			=> 'sessions#new'
 	match '/signout'		=> 'sessions#destroy'
 	match '/signup'			=> 'users#new'
