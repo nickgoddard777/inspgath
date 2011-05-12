@@ -3,7 +3,7 @@
 					<h2>upcoming events</h2>
 					<ul>
 						<% for event in Event.next_five %>
-							<li><%= link_to event.title, events_path(event.id) %></li>
+							<li><%= link_to event.title, event_path(event.id) %></li>
 						<% end %>
 					</ul>
 				</div>
@@ -15,8 +15,9 @@
 						<li><a href="http://www.facebook.com/pages/Inspirational-Gatherings/136767873034010" rel="me">facebook</a></li>
 						<li><a href="http://www.last.fm/user/InspirationalG" rel="me">last.fm</a></li>
 						<li><a href="http://afestivalorganisers.blogspot.com/feeds/posts/default" rel="alternate">rss</a></li>
-						<li><a href="http://twitter.com/inspirationalg" rel="me">twitter</a></li>				
+						<li><a href="http://twitter.com/inspirationalg" rel="me">twitter</a></li>
 						<li><a href="http://uk.linkedin.com/in/inspirationalgatherings" rel="me">linkedin</a></li>
 					</ul>
 				</div><!-- /.social -->
 			</section>
+

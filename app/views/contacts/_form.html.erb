@@ -22,7 +22,7 @@
     <%= f.label "Event" %>
   </p>
   <p>
-    <%= f.select :event, options_for_select(Event.all) %>
+    <%= f.collection_select(:event, Event.all, :title, :title) %>
   </p>
   <p>
     <%= f.label "Details *" %>
