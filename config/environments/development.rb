@@ -22,5 +22,19 @@ Inspgath::Application.configure do
 
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
+
+  # config/initializers/mailer.rb
+config.action_mailer.delivery_method = :smtp
+
+config.action_mailer.smtp_settings = {
+:enable_starttls_auto => true,
+:address => 'smtp.gmail.com',
+:port => 587,
+:domain => "inspirationalgatherings.com",
+:user_name => 'nicko777@gmail.com',
+:password => 'NG1973goog',
+:authentication => 'plain',
+}
+
 end
 
