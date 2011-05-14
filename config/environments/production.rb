@@ -35,15 +35,7 @@ Inspgath::Application.configure do
 
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-    :address              => "smtp.sendgrid.com",
-    :port                 => '25',
-    :domain               => 'inspirationalgatherings.co.uk',
-    :user_name            => 'app402073@heroku.com',
-    :password             => '2d53ae33f6f782bf2',
-    :authentication       => :plain
-  }
+
 
   # Enable threaded mode
   # config.threadsafe!
