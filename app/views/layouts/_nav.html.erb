@@ -7,11 +7,11 @@
         <% cache 'all_categories' do %>
           <% for category in Category.all %>
             <li><%= link_to h(category.name), category %></li>
-          <% end %> 
+          <% end %>
         <% end %>
       </ul>
     </li>
-    <li><a href="http://afestivalorganisers.blogspot.com" title="Blog">Blog</a></li>
+    <li><a href="http://inspirationalgatherings.wordpress.com" title="Blog">Blog</a></li>
     <li><%= link_to "Contact", new_contact_path %></li>
     <% if signed_in? %>
       <li><%= link_to "Admin", :controller => "pages", :action => "admin" %>
@@ -25,3 +25,4 @@
 
   </ul>
 </nav>
+
