@@ -266,3 +266,5 @@ REQUESTING PAGE: GET http://www.example.com/users/980190963 with {} and HTTP hea
 REQUESTING PAGE: GET /signout with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/980190963"}
 REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/signout"}
 REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: GET /exhibitors/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /exhibitors with {"utf8"=>"\xE2\x9C\x93", "exhibitor"=>{"name"=>"", "website"=>"", "email"=>"", "address1"=>"", "address2"=>"", "city"=>"", "county"=>"", "postcode"=>"", "tel_no"=>"", "description"=>""}, "commit"=>"Create Exhibitor"} and HTTP headers {"HTTP_REFERER"=>"/exhibitors/new"}

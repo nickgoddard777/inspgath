@@ -1,5 +1,5 @@
 Inspgath::Application.routes.draw do
-	
+
   resources :contacts
 
 	match '/signin'			=> 'sessions#new'
@@ -10,13 +10,14 @@ Inspgath::Application.routes.draw do
 	match 'lisavickerage'	=> 'pages#lisavickerage'
 	match 'ellenwray'		=> 'pages#ellenwray'
 	match 'admin'			=> 'pages#admin'
-	
+
 
 	resources :pages
 	resources :events
 	resources :categories
 	resources :users
 	resources :sessions, :only => [:new, :create, :destroy]
+	resources :exhibitors
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -75,3 +76,4 @@ Inspgath::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id(.:format)))'
 end
+

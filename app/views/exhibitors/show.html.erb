@@ -1,0 +1,26 @@
+<% title @title %>
+
+<h1><%= @exhibitor.name %></h1>
+
+<address>
+  <p>Homepage: <%= @exhibitor.website %></p>
+  <p>Email:    <%= @exhibitor.email %></p>
+  <p>Tel No:   <%= @exhibitor.tel_no %></p>
+  <p>Address: <br />
+  <%= @exhibitor.address1 %><br />
+  <%= @exhibitor.address2 %><br />
+  <%= @exhibitor.city %><br />
+  <%= @exhibitor.county %><br />
+  <%= @exhibitor.postcode %></p>
+</address>
+
+<p class="description"><%= @exhibitor.description %></p>
+
+<p>
+<% if signed_in? %>
+  <%= link_to "Edit", edit_event_path(@event) %> |
+  <%= link_to "Destroy", @event, :confirm => 'Are you sure?', :method => :delete %> |
+<% end %>
+  <%= link_to "View All", events_path %>
+</p>
+
