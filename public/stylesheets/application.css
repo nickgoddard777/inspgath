@@ -163,7 +163,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 	background: #fff;
 	margin: 2em auto 3em auto;
 	padding: 2.5em 0 0 0;
- 
+
     border-radius: 10px;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -198,10 +198,22 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
     overflow: hidden;
     padding: 20px 20px;
     width: 760px;
- 
+
     border-radius: 10px;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
+}
+
+#content address{
+    float: right;
+    padding: 5px;
+    border-left: 1px solid #031F35;
+}
+
+#content .description {
+    display: block;
+    width: 500px;
+
 }
 
 
@@ -210,10 +222,10 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 *******************/
 
 #extras {
-	margin: 0 auto 3em auto; 
+	margin: 0 auto 3em auto;
 	overflow: hidden;
 	background: #fff;
- 
+
     border-radius: 10px;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;

@@ -1,9 +1,9 @@
 class Contact
 	include ActiveModel::Validations
 
-	validates_presence_of :email, :name, :contact_type, :body
+	validates_presence_of :email, :name, :contact_type, :event, :body
 
-	attr_accessor :id, :email, :name, :contact_type, :event, :body
+  attr_accessor :email, :name, :contact_type, :event, :body
 
 	def initialize(attributes = {})
 		attributes.each do |key, value|
@@ -27,3 +27,4 @@ class Contact
 		return false
 	end
 end
+

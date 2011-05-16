@@ -1,3 +1,19 @@
+# == Schema Information
+# Schema version: 20110514175326
+#
+# Table name: events
+#
+#  id          :integer         not null, primary key
+#  title       :string(255)
+#  description :text
+#  startdate   :date
+#  enddate     :date
+#  url_link    :string(255)
+#  category_id :integer
+#  created_at  :datetime
+#  updated_at  :datetime
+#
+
 one:
   title: MyString
   description: MyText
