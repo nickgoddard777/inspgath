@@ -18,3 +18,11 @@ Factory.define :exhibitor do |exhibitor|
   exhibitor.description "This is a test exhibitor"
 end
 
+Factory.sequence :email do |n|
+  "person-#{n}@example.com"
+end
+
+Factory.sequence :website do |n|
+  "http://www.company-#{n}.net"
+end
+

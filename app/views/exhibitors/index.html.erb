@@ -1,0 +1,14 @@
+<% title @title %>
+
+<%= will_paginate %>
+
+<ul class="exhibitors">
+  <% @exhibitors.each do |exhibitor| -%>
+    <li>
+      <%= link_to exhibitor.name, exhibitor %>
+    </li>
+  <% end -%>
+</ul>
+
+<%= will_paginate %>
+
