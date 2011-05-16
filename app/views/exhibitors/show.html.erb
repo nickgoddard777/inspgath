@@ -16,9 +16,9 @@
 
 <p>
 <% if signed_in? %>
-  <%= link_to "Edit", edit_event_path(@event) %> |
-  <%= link_to "Destroy", @event, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "Edit", edit_exhibitor_path(@event) %> |
+  <%= link_to "Destroy", @exhibitor, :confirm => 'Are you sure?', :method => :delete %> |
 <% end %>
-  <%= link_to "View All", events_path %>
+  <%= link_to "View All", exhibitors_path %>
 </p>
 
