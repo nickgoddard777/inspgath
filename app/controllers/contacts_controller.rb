@@ -1,6 +1,6 @@
 class ContactsController < ApplicationController
 	def new
-		@contact = Contact.new(:id => 1)
+		@contact = Contact.new
 	end
 
 	def create
@@ -13,3 +13,4 @@ class ContactsController < ApplicationController
 		end
 	end
 end
+
